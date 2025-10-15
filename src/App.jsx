@@ -1,5 +1,6 @@
 import React from "react";
-import weatherForecasts from `./components/WeatherForecast/WeatherForecast.jsx`
+import './App.css';
+import weatherForecasts from './components/WeatherForecast/WeatherForecast.jsx';
 const weatherForecasts = [
   {
     day: 'Mon',
