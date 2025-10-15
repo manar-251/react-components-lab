@@ -1,9 +1,5 @@
 import React from "react";
-
-
-  <>
-    <h1>Local Weather</h1>
-    <section>
+import weatherForecasts from `./components/WeatherForecast/WeatherForecast.jsx`
 const weatherForecasts = [
   {
     day: 'Mon',
@@ -41,6 +37,21 @@ const weatherForecasts = [
     time: 'Night',
   },
 ];
+
+  <>
+    <h1>Local Weather</h1>
+    <section>
+  {weatherForecasts.map((forecast, index) => (
+    <
+    weatherForecasts
+    key={index}
+    day={forecast.day}
+    img={forecast.img}
+    imgAlt={forecast.conditions}
+    time={forecast.time}
+    />
+
+  ))}
 
     </section>
   </>
